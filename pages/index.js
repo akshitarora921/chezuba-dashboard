@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import Paper from "../components/paper";
 
 export default function Home() {
   return (
@@ -12,8 +14,87 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main>
-        <h1 className='text-3xl font-bold underline'>Hello world!</h1>
+      <main className='min-h-screen flex bg-[#E5E5E5]'>
+        <div className='flex flex-col items-center w-max p-3'>
+          <div className='my-8'>
+            <Image
+              src='/images/logo.png'
+              alt='chezuba logo'
+              height='109'
+              width='153'
+            />
+          </div>
+          <div className='relative'>
+            <Image
+              src='/images/userImage.png'
+              alt='user-image'
+              height='140'
+              width='140'
+              className='rounded-full'
+            />
+            <h2 className='text-2xl text-[#BB421C] ml-2'>Sukhendra</h2>
+            <h2 className='text-2xl text-[#BB421C] ml-2'>Rompally</h2>
+          </div>
+          <ul className='mt-6 flex flex-col gap-3'>
+            <li className='text-lg text-[#2D0CFB]'>Home</li>
+            <li className='text-lg text-[#D6B7B7]'>Calender</li>
+            <li className='text-lg text-[#D6B7B7]'>Projects</li>
+            <li className='text-lg text-[#D6B7B7]'>My Application</li>
+            <li className='text-lg text-[#D6B7B7] flex items-center gap-1'>
+              Extras
+              <svg
+                width='12'
+                height='13'
+                viewBox='0 0 12 13'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M12 6.5L0.75 12.9952L0.75 0.00480938L12 6.5Z'
+                  fill='#B5A8A8'
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div className='flex flex-1 flex-col gap-4'>
+          <div className='flex flex-1 gap-4'>
+            <Paper>
+              <div className='flex justify-between items-center'>
+                <h2 className='text-3xl font-light'>Activity Calendar</h2>
+                <Link href='/calender'>
+                  <a> View all</a>
+                </Link>
+              </div>
+            </Paper>
+            <Paper>
+              <div className='flex justify-between items-center'>
+                <h2 className='text-3xl font-light'>Activity Calendar</h2>
+                <Link href='/calender'>
+                  <a> View all</a>
+                </Link>
+              </div>
+            </Paper>
+          </div>
+          <div className='flex flex-1 gap-4'>
+            <Paper>
+              <div className='flex justify-between items-center'>
+                <h2 className='text-3xl font-light'>Activity Calendar</h2>
+                <Link href='/calender'>
+                  <a> View all</a>
+                </Link>
+              </div>
+            </Paper>
+            <Paper>
+              <div className='flex justify-between items-center'>
+                <h2 className='text-3xl font-light'>Activity Calendar</h2>
+                <Link href='/calender'>
+                  <a> View all</a>
+                </Link>
+              </div>
+            </Paper>
+          </div>
+        </div>
       </main>
     </div>
   );
