@@ -71,7 +71,7 @@ export default function Home() {
             </div>
             <div className='relative'>
               <Image
-                src='/images/userImage.png'
+                src='/images/user-image.png'
                 alt='user-image'
                 height='120'
                 width='120'
