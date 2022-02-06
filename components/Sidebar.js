@@ -33,7 +33,7 @@ function Sidebar({ isOpen, onClose }) {
       </div>
       <div className='relative'>
         <Image
-          src='/images/userImage.png'
+          src='/images/user-image.png'
           alt='user-image'
           height='140'
           width='140'
