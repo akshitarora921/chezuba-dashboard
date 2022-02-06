@@ -6,7 +6,7 @@ import Paper from "../components/paper";
 import Sidebar from "../components/Sidebar";
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   console.log(isOpen);
   return (
     <div>
@@ -21,7 +21,7 @@ export default function Home() {
       <main className='flex flex-col justify-center items-center w-full min-h-screen bg-[#E5E5E5]'>
         <div className='p-4 w-full md:hidden'>
           <div className='flex justify-between p-6 shadow-xl rounded-3xl bg-white'>
-            <div className='mx-3'>
+            <div className='mx-3 flex items-center'>
               <Image
                 src='/images/mobile-logo.png'
                 alt='chezuba logo'
@@ -29,6 +29,9 @@ export default function Home() {
                 width='50'
                 objectFit='contain'
               />
+              <h3 className='text-2xl ml-1 tracking-tight uppercase text-gray-600'>
+                chezuba
+              </h3>
             </div>
             <button
               className='bg-white rounded p-4 w-min '
